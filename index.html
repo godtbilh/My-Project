@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">T-Shirt Store</div>
+            <div class="cart-icon">
+                🛒 <span id="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Quality T-Shirts for Everyone</h1>
+            <p>Discover our collection of comfortable and stylish t-shirts</p>
+        </section>
+
+        <section class="products" id="products">
+            <!-- Products will be added here by JavaScript -->
+        </section>
+
+        <div id="cart-modal" class="modal">
+            <div class="modal-content">
+                <h2>Shopping Cart</h2>
+                <div id="cart-items">
+                    <!-- Cart items will be added here -->
+                </div>
+                <div class="cart-total">
+                    Total: $<span id="cart-total">0.00</span>
+                </div>
+                <div class="modal-buttons">
+                    <button onclick="closeCart()">Close</button>
+                    <button onclick="checkout()" class="checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 T-Shirt Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
